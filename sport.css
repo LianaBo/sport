@@ -1,0 +1,14 @@
+header {
+  background-color: orange;
+
+}
+
+.bd-example-row {
+  padding-bottom: 0.75rem;
+  padding-top: 0.75rem;
+  border: 3px solid white;
+  background-color: blue;
+  display: flex;
+  color: #ffffff;
+ }
+
