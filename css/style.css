@@ -75,7 +75,8 @@ li{
 /*about*/
 
 .about {
-	padding-top: 80px;
+	padding-top: 50px;
+	padding-bottom: 60px;
 	text-align: center;
 }
 
@@ -99,8 +100,8 @@ li{
 /*services*/
 
 .services {
-	padding-top: 80px;
-	padding-bottom: 100px;
+	padding-top: 50px;
+	padding-bottom: 60px;
 	text-align: center;
 	background-color: #D0C49E;
 }
@@ -141,3 +142,27 @@ li{
 	box-shadow: 10px 10px 45px -10px rgba(255,255,255,0.71);
 }
 
+/*portfolio */
+
+.portfolio {
+	padding-top: 50px;
+	padding-bottom: 60px;
+	text-align: center;
+	background-color: #fff;
+}
+
+.portfolio button:hover {
+	background: transparent;
+	color:#000;
+	border: 1.3px solid #1c7067;
+}
+
+.portfolio img {
+	margin-bottom: 30px;
+
+}
+
+.filter {
+	padding: 60px 0;
+
+}
