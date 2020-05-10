@@ -113,7 +113,7 @@ li{
 	color: #000;
 }
 
-.our_card{
+.our_card {
 	margin-bottom: 35px;
 	background: #EDECDD;
 	padding-top: 50px;
@@ -123,10 +123,11 @@ li{
 	box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.1)
 }
 
-.our_card:hover{
+.our_card:hover {
 	color: #fff;
 	background: #1c7067;
 	transition: 0.4s;
+	cursor: pointer;
 }
 
 .our_card:hover .button_full-white {
@@ -159,10 +160,92 @@ li{
 
 .portfolio img {
 	margin-bottom: 30px;
-
+	cursor: pointer;
 }
 
 .filter {
 	padding: 60px 0;
 
+}
+
+/*pricing */
+
+.pricing {
+	padding-top: 50px;
+	padding-bottom: 60px;
+	text-align: center;
+	background-color:#f0f1f1; 
+}
+
+.price {
+	background-color: #fff;
+	box-shadow: 6px 4px 20px 7px rgba(0,0,0,0.11);
+}
+
+.price__header {
+	background-image: url(../images/Pricing.png);
+	color: #fff;
+	font-family:"Open Sans Regular";
+	background-size: cover;
+	background-repeat:no-repeat;
+	max-height: 210px;
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+.price__header h3 {
+	font-size: 25px;
+}
+
+.price__header span {
+	font-size: 50px;
+}
+
+.price__header sup {
+	vertical-align: middle;
+	font-size: 25px;
+}
+
+.price__header sub {
+	font-size: 17px;
+	vertical-align: middle;
+}
+
+.price__body { 
+	font-size: 17px;
+	font-family:"Open Sans Light";
+	color: #212121;
+}
+
+.price__body li {
+	border-bottom: 1px solid #bfbfbf;
+	max-width: 175px;
+	margin: 0 auto;
+	padding-top: 28px;
+	padding-bottom: 12px;
+}
+
+.price__footer {
+	padding-top: 45px;
+	padding-bottom: 40px;
+}
+
+.price:hover {
+	box-shadow: 6px 4px 20px 7px rgba(0,0,0,0.25);
+	transition: 0.4s;
+	cursor: pointer;
+}
+
+.price:hover .button {
+	background-color: transparent;
+	border: 1.3px solid #1c7067;
+	color: #1c7067;	
+	transition: 0.2s;
+}
+
+.price:hover .button:hover {
+	background-color: #1c7067;
+	border: 1.3px solid #1c7067;
+	color: #fff;
+	transition: 0.4s;	
 }
