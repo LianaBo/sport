@@ -1,300 +1,327 @@
 @import "fonts.css";
-html{
-	color:#000;
-	font-family:"Open Sans";
-	background-color: #EDECDD;
+
+html {
+    color: #000;
+    font-family: "Open Sans";
+    background-color: #EDECDD;
 }
 
 ul,
-li{
-	display: block;
-	padding: 0;
-	margin: 0;
+li {
+    display: block;
+    padding: 0;
+    margin: 0;
 }
 
 .header-menu {
-	color: #000;
-	padding: 20px 0;
-	background-color: #fff;
+    color: #000;
+    padding: 20px 0;
+    background-color: #fff;
 }
 
 .menu__item {
-	margin-left: 38px;
+    margin-left: 38px;
 }
+
 .menu__item a {
-	font-family:"Open Sans Semibold";
-	font-size: 20px;
-	color: #000;
-	text-decoration: none;
+    font-family: "Open Sans Semibold";
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
 }
 
 .menu__item a:hover {
-	color: #15bdac;
-	transition: 0.3s;
+    color: #15bdac;
+    transition: 0.3s;
 }
 
-.header  {
-	background-image: url(../images/bak1.png);
-	background-size: cover; /*масштаб с сохранением пропорций*/
-	background-position: center;
-	padding: 180px 0;
-	text-align: center;
-	color: #000;
+.header {
+    background-image: url(../images/bak1.png);
+    background-size: cover;
+    /*масштаб с сохранением пропорций*/
+    background-position: center;
+    padding: 180px 0;
+    text-align: center;
+    color: #000;
 }
 
 .header__title {
-	font-size: 60px; 
+    font-size: 60px;
 }
 
-.header__text{
-	font-family:"Open Sans Regular";
-	font-size: 22px;
-	margin-bottom: 90px; 
+.header__text {
+    font-family: "Open Sans Regular";
+    font-size: 22px;
+    margin-bottom: 90px;
 }
 
 .button {
-	padding: 10px 25px;
-	margin: 0 10px;
-	color: #fff;
-	transition: 0.3s;
-	text-transform: uppercase;
-	font-weight: bold;
+    padding: 10px 25px;
+    margin: 0 10px;
+    color: #fff;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .button_full {
-	background: #1c7067;
-	border: 1.3px solid #1c7067;
+    background: #1c7067;
+    border: 1.3px solid #1c7067;
 }
 
 .button_full:hover {
-	background-color: #B2A893;
-	border: 1.3px solid #B2A893;
-	color: #000;
+    background-color: #B2A893;
+    border: 1.3px solid #B2A893;
+    color: #000;
 }
 
 /*about*/
 
 .about {
-	padding-top: 50px;
-	padding-bottom: 60px;
-	text-align: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    text-align: center;
 }
 
-.main__title{
-	font-size: 30px;
-	font-weight: bold;
+.main__title {
+    font-size: 30px;
+    font-weight: bold;
 }
 
-.main__text{
-	font-size: 15px;
-	margin-bottom: 60px;
-	margin-top: 20px;
+.main__text {
+    font-size: 15px;
+    margin-bottom: 60px;
+    margin-top: 20px;
 }
 
 .main_h3 {
-	font-family:"Open Sans Semibold";
-	font-size: 20px;
-	padding-top: 20px;
+    font-family: "Open Sans Semibold";
+    font-size: 20px;
+    padding-top: 20px;
 }
 
 /*services*/
 
 .services {
-	padding-top: 50px;
-	padding-bottom: 60px;
-	text-align: center;
-	background-color: #D0C49E;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: #D0C49E;
 }
 
 .button_full-white {
-	background: transparent;
-	border: 1.3px solid #000;
-	padding: 10px 12px 10px;
-	color: #000;
+    background: transparent;
+    border: 1.3px solid #000;
+    padding: 10px 12px 10px;
+    color: #000;
 }
 
 .our_card {
-	margin-bottom: 35px;
-	background: #EDECDD;
-	padding-top: 50px;
-	padding-bottom: 40px;
-	padding-left: 20px;
-	padding-right: 20px;
-	box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.1)
+    margin-bottom: 35px;
+    background: #EDECDD;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1)
 }
 
 .our_card:hover {
-	color: #fff;
-	background: #1c7067;
-	transition: 0.4s;
-	cursor: pointer;
+    color: #fff;
+    background: #1c7067;
+    transition: 0.4s;
+    cursor: pointer;
 }
 
 .our_card:hover .button_full-white {
-	border: 1.3px solid #fff;
-	color: #fff;
+    border: 1.3px solid #fff;
+    color: #fff;
 }
 
 .our_card:hover .button_full-white:hover {
-	background: #fff;
-	transition: 0.4s;
-	color: #000;
-	border: 1.3px solid #fff;
-	box-shadow: 10px 10px 45px -10px rgba(255,255,255,0.71);
+    background: #fff;
+    transition: 0.4s;
+    color: #000;
+    border: 1.3px solid #fff;
+    box-shadow: 10px 10px 45px -10px rgba(255, 255, 255, 0.71);
 }
 
 /*portfolio */
 
 .portfolio {
-	padding-top: 50px;
-	padding-bottom: 60px;
-	text-align: center;
-	background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: #fff;
 }
 
 .portfolio button:hover {
-	background: transparent;
-	color:#000;
-	border: 1.3px solid #1c7067;
+    background: transparent;
+    color: #000;
+    border: 1.3px solid #1c7067;
 }
 
 .portfolio img {
-	margin-bottom: 30px;
-	cursor: pointer;
+    margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .filter {
-	padding: 60px 0;
+    padding: 60px 0;
 
 }
 
 /*pricing */
 
 .pricing {
-	padding-top: 50px;
-	padding-bottom: 60px;
-	text-align: center;
-	background-color:#f0f1f1; 
+    padding-top: 50px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: #f0f1f1;
 }
 
 .price {
-	background-color: #fff;
-	box-shadow: 6px 4px 20px 7px rgba(0,0,0,0.11);
+    background-color: #fff;
+    box-shadow: 6px 4px 20px 7px rgba(0, 0, 0, 0.11);
 }
 
 .price__header {
-	background-image: url(../images/Pricing.png);
-	color: #fff;
-	font-family:"Open Sans Regular";
-	background-size: cover;
-	background-repeat:no-repeat;
-	max-height: 210px;
-	padding-top: 40px;
-	padding-bottom: 60px;
+    background-image: url(../images/Pricing.png);
+    color: #fff;
+    font-family: "Open Sans Regular";
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 210px;
+    padding-top: 40px;
+    padding-bottom: 60px;
 }
 
 .price__header h3 {
-	font-size: 25px;
+    font-size: 25px;
 }
 
 .price__header span {
-	font-size: 50px;
+    font-size: 50px;
 }
 
 .price__header sup {
-	vertical-align: middle;
-	font-size: 25px;
+    vertical-align: middle;
+    font-size: 25px;
 }
 
 .price__header sub {
-	font-size: 17px;
-	vertical-align: middle;
+    font-size: 17px;
+    vertical-align: middle;
 }
 
-.price__body { 
-	font-size: 17px;
-	font-family:"Open Sans Light";
-	color: #212121;
+.price__body {
+    font-size: 17px;
+    font-family: "Open Sans Light";
+    color: #212121;
 }
 
 .price__body li {
-	border-bottom: 1px solid #bfbfbf;
-	max-width: 175px;
-	margin: 0 auto;
-	padding-top: 28px;
-	padding-bottom: 12px;
+    border-bottom: 1px solid #bfbfbf;
+    max-width: 175px;
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 12px;
 }
 
 .price__footer {
-	padding-top: 45px;
-	padding-bottom: 40px;
+    padding-top: 45px;
+    padding-bottom: 40px;
 }
 
 .price:hover {
-	box-shadow: 6px 4px 20px 7px rgba(0,0,0,0.25);
-	transition: 0.4s;
-	cursor: pointer;
+    box-shadow: 6px 4px 20px 7px rgba(0, 0, 0, 0.25);
+    transition: 0.4s;
+    cursor: pointer;
 }
 
 .price:hover .button {
-	background-color: transparent;
-	border: 1.3px solid #1c7067;
-	color: #1c7067;	
-	transition: 0.2s;
+    background-color: transparent;
+    border: 1.3px solid #1c7067;
+    color: #1c7067;
+    transition: 0.2s;
 }
 
 .price:hover .button:hover {
-	background-color: #1c7067;
-	border: 1.3px solid #1c7067;
-	color: #fff;
-	transition: 0.4s;	
+    background-color: #1c7067;
+    border: 1.3px solid #1c7067;
+    color: #fff;
+    transition: 0.4s;
 }
 
 /* Our Team */
 .team {
-	padding-top: 50px;
-	padding-bottom: 60px;
-	text-align: center;
-	background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: #fff;
 }
 
-.team .main__text{
-	margin-bottom: 60px;
+.team .main__text {
+    margin-bottom: 60px;
 }
+
 .team h4 {
-	font-size: 20px;
-	font-family: "Open Sans Semibold";
-	margin-top: 20px;
+    font-size: 20px;
+    font-family: "Open Sans Semibold";
+    margin-top: 20px;
 }
 
 .team p {
-	font-size: 15px;
-	font-family: "Open Sans Regular";
-	margin-bottom: 20px;
+    font-size: 15px;
+    font-family: "Open Sans Regular";
+    margin-bottom: 20px;
 }
 
-.team img{
-	cursor: pointer;
+.team img {
+    cursor: pointer;
+    margin: 0 auto;
+    max-width: 340px;
 }
 
-.icons{
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons i:nth-child(1) {
+    color: #f0f1f1;
+}
+
+.icons i:nth-child(2) {
+    color: #00897b;
+}
+
+.icons a:hover i:nth-child(1) {
+    color: #00897b;
+    transition: 0.3s;
+}
+
+.icons a:hover i:nth-child(2) {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.dots-style {
+	margin-top: 50px;
 	display: flex;
 	justify-content: center;
 }
 
-.icons i:nth-child(1){
-	color: #f0f1f1;
+.dots-style button {
+	background-color: #00897b;
+	border: none;
+	border-radius: 50%;
+	font-size: 0;
+	width: 15px;
+	height: 15px;
+	margin: 5px;
 }
 
-.icons i:nth-child(2){
-	color: #00897b;
-}
-
-.icons a:hover i:nth-child(1){
-	color: #00897b;
-	transition: 0.3s;
-}
-.icons a:hover i:nth-child(2){
-	color: #fff;
-	transition: 0.3s;
+.dots-style li[class="slick-active"] button {
+	background-color: #223686;
 }

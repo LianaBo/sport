@@ -1,367 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <!-- оптимизация под моб. -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- подключение стилей bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
-  <link rel="stylesheet" href="css/style.css">
-  <!-- подключение иконок -->
-  <script src="https://kit.fontawesome.com/77a09c2cb8.js" crossorigin="anonymous"></script>
-  <title>Web development project</title>
+    <meta charset="UTF-8">
+    <!-- оптимизация под моб. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- подключение стилей bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- подключение стилей -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Web development project</title>
 </head>
+    <!-- подключение иконок -->
+    <script src="https://kit.fontawesome.com/77a09c2cb8.js" crossorigin="anonymous"></script>
 <body>
-  <header class="header-menu">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-2">
-          <a href="#">
-            <img src="images/logo1.png" width="130" class="logo" alt="logo">
-          </a>
-        </div>
-        <div class="col-xl-8 ml-auto align-self-center"> <!-- ml-auto меню смешается влево // align-self-center выравнивание текста по центру -->
-          <nav>
-            <ul class="menu d-flex justify-content-end"> 
-              <li class="menu__item"><a href="#">Home</a></li>  
-              <li class="menu__item"><a href="#">About</a></li>
-              <li class="menu__item"><a href="#">Servicing </a></li>
-              <li class="menu__item"><a href="#">Portfolio</a></li>
-              <li class="menu__item"><a href="#">Blog </a></li>
-              <li class="menu__item"><a href="#">Contact us</a></li>
-              <li class="menu__item"><i class="fas fa-search"></i></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-  <header class="header">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-12">
-          <h1 class="header__title">Web development project</h1>
-          <p class="header__text">Very suitable to support all web development projects</p>
-          <button class="button button_full">Our services</button>
-          <button class="button button_full">Hire is now</button> <!-- full заполненная -->
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- секция about -->
-  <section class="about">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-8">
-          <h2 class="main__title">About Us</h2>
-          <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        </div>
-      </div>
-      <div class="row justify-content-around text-center"> <!-- выравнивание с одинаковыми отступами -->
-        <div class="col-xl-3">
-          <i class="fab fa-battle-net fa-3x"></i>
-          <h3 class="main_h3">Awesome Icons</h3>
-          <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-        </div>
-        <div class="col-xl-3">
-          <i class="fas fa-book-open fa-3x"></i>
-          <h3 class="main_h3">One Page</h3>
-          <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-        </div>
-        <div class="col-xl-3">
-          <i class="fas fa-brain fa-3x"></i>
-          <h3 class="main_h3">Fully Responsive</h3>
-          <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- секция services -->
-  <section class="services">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-8">
-          <h2 class="main__title">Our Services</h2>
-          <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-        </div>
-      </div>
-      <div class="row justify-content-around text-center"> <!-- выравнивание с одинаковыми отступами -->
-        <div class="col-xl-4">
-          <div class="our_card">
-            <i class="fas fa-mobile-alt fa-3x"></i>
-            <h3 class="main_h3">Research</h3>
-            <p class="main__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
-            <button class="button button_full-white">Read more</button>
-          </div>
-        </div>
-        <div class="col-xl-4">
-          <div class="our_card">
-            <i class="fas fa-portrait fa-3x"></i>
-            <h3 class="main_h3">Portfolio</h3>
-            <p class="main__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
-            <button class="button button_full-white">Read more</button>
-          </div>
-        </div>
-        <div class="col-xl-4">
-          <div class="our_card">
-            <i class="fas fa-headset fa-3x"></i>
-            <h3 class="main_h3">Support</h3>
-            <p class="main__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
-            <button class="button button_full-white">Read more</button>
-          </div>
-      </div>
-      <div class="col-xl-4">
-          <div class="our_card">
-            <i class="far fa-file fa-3x"></i>
-            <h3 class="main_h3">Documentation</h3>
-            <p class="main__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
-            <button class="button button_full-white">Read more</button>
-          </div>
-        </div>
-        <div class="col-xl-4">
-          <div class="our_card">
-            <i class="fab fa-dev fa-3x"></i>
-            <h3 class="main_h3">Development</h3>
-            <p class="main__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
-            <button class="button button_full-white">Read more</button>
-          </div>
-        </div>
-        <div class="col-xl-4">
-          <div class="our_card">
-            <i class="fas fa-palette fa-3x"></i>
-            <h3 class="main_h3">Design</h3>
-            <p class="main__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
-            <button class="button button_full-white">Read more</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-   <!-- секция portfolio -->
-
-  <section class="portfolio">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-8">
-          <h2 class="main__title">Latest Works</h2>
-          <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          <button class="button button_full">All</button>
-          <button class="button button_full">Web design</button>
-          <button class="button button_full">UI/UX design</button>
-          <button class="button button_full">Mockups</button>
-        </div>
-        <div class="row filter">
-          <div class="col-xl-4"><img src="images/item1.png" alt=""></div>
-          <div class="col-xl-4"><img src="images/item2.png" alt=""></div>
-          <div class="col-xl-4"><img src="images/item3.png" alt=""></div>
-          <div class="col-xl-4"><img src="images/item4.png" alt=""></div>
-          <div class="col-xl-4"><img src="images/item5.png" alt=""></div>
-          <div class="col-xl-4"><img src="images/item6.png" alt=""></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xl-12">
-          <button class="button button_full">View all</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- секция pricing -->
-
-  <section class="pricing">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-8">
-          <h2 class="main__title">Pricing Plan</h2>
-          <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        </div>
-      </div>
-      <div class="row justify-content-around">
-        <div class="col-xl-4">
-          <div class="price">
-            <div  class="price__header">
-              <h3>Free Trail</h3>
-              <span>
-                <sup>&#36;</sup>00<sub>per month</sub> 
-              </span>
+    <header class="header-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2">
+                    <a href="#">
+                        <img src="images/logo1.png" width="130" class="logo" alt="logo">
+                    </a>
+                </div>
+                <div class="col-xl-8 ml-auto align-self-center">
+                    <!-- ml-auto меню смешается влево // align-self-center выравнивание текста по центру -->
+                    <nav>
+                        <ul class="menu d-flex justify-content-end">
+                            <li class="menu__item"><a href="#">Home</a></li>
+                            <li class="menu__item"><a href="#">About</a></li>
+                            <li class="menu__item"><a href="#">Servicing </a></li>
+                            <li class="menu__item"><a href="#">Portfolio</a></li>
+                            <li class="menu__item"><a href="#">Blog </a></li>
+                            <li class="menu__item"><a href="#">Contact us</a></li>
+                            <li class="menu__item"><i class="fas fa-search"></i></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div class="price__body">
-              <ul>
-                <li>30 Free Trail</li>
-                <li>5 Free Projects</li>
-                <li>PHP 5 Enabled</li>
-                <li>24/7 Suports</li>
-              </ul>
-            </div>
-            <div class="price__footer">
-              <button class="button button_full">Read more</button>
-            </div>
-          </div>
         </div>
-        <div class="col-xl-4">
-          <div class="price">
-            <div  class="price__header">
-              <h3>Basic</h3>
-              <span>
-                <sup>&#36;</sup>50<sub>per month</sub> 
-              </span>
+    </header>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h1 class="header__title">Web development project</h1>
+                    <p class="header__text">Very suitable to support all web development projects</p>
+                    <button class="button button_full">Our services</button>
+                    <button class="button button_full">Hire is now</button> <!-- full заполненная -->
+                </div>
             </div>
-            <div class="price__body">
-              <ul>
-                <li>30 Free Trail</li>
-                <li>5 Free Projects</li>
-                <li>PHP 5 Enabled</li>
-                <li>24/7 Suports</li>
-              </ul>
-            </div>
-            <div class="price__footer">
-              <button class="button button_full">Read more</button>
-            </div>
-          </div>
         </div>
-        <div class="col-xl-4">
-          <div class="price">
-            <div  class="price__header">
-              <h3>Ultimates</h3>
-              <span>
-                <sup>&#36;</sup>99<sub>per month</sub> 
-              </span>
+    </header>
+    <!-- секция about -->
+    <section class="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <h2 class="main__title">About Us</h2>
+                    <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
             </div>
-            <div class="price__body">
-              <ul>
-                <li>30 Free Trail</li>
-                <li>5 Free Projects</li>
-                <li>PHP 5 Enabled</li>
-                <li>24/7 Suports</li>
-              </ul>
+            <div class="row justify-content-around text-center">
+                <!-- выравнивание с одинаковыми отступами -->
+                <div class="col-xl-3">
+                    <i class="fab fa-battle-net fa-3x"></i>
+                    <h3 class="main_h3">Awesome Icons</h3>
+                    <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="col-xl-3">
+                    <i class="fas fa-book-open fa-3x"></i>
+                    <h3 class="main_h3">One Page</h3>
+                    <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="col-xl-3">
+                    <i class="fas fa-brain fa-3x"></i>
+                    <h3 class="main_h3">Fully Responsive</h3>
+                    <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                </div>
             </div>
-            <div class="price__footer">
-              <button class="button button_full">Read more</button>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
+    <!-- секция services -->
+    <section class="services">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <h2 class="main__title">Our Services</h2>
+                    <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                </div>
+            </div>
+            <div class="row justify-content-around text-center">
+                <!-- выравнивание с одинаковыми отступами -->
+                <div class="col-xl-4">
+                    <div class="our_card">
+                        <i class="fas fa-mobile-alt fa-3x"></i>
+                        <h3 class="main_h3">Research</h3>
+                        <p class="main__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+                        <button class="button button_full-white">Read more</button>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="our_card">
+                        <i class="fas fa-portrait fa-3x"></i>
+                        <h3 class="main_h3">Portfolio</h3>
+                        <p class="main__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+                        <button class="button button_full-white">Read more</button>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="our_card">
+                        <i class="fas fa-headset fa-3x"></i>
+                        <h3 class="main_h3">Support</h3>
+                        <p class="main__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+                        <button class="button button_full-white">Read more</button>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="our_card">
+                        <i class="far fa-file fa-3x"></i>
+                        <h3 class="main_h3">Documentation</h3>
+                        <p class="main__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+                        <button class="button button_full-white">Read more</button>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="our_card">
+                        <i class="fab fa-dev fa-3x"></i>
+                        <h3 class="main_h3">Development</h3>
+                        <p class="main__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+                        <button class="button button_full-white">Read more</button>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="our_card">
+                        <i class="fas fa-palette fa-3x"></i>
+                        <h3 class="main_h3">Design</h3>
+                        <p class="main__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+                        <button class="button button_full-white">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- секция portfolio -->
+    <section class="portfolio">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <h2 class="main__title">Latest Works</h2>
+                    <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <button class="button button_full">All</button>
+                    <button class="button button_full">Web design</button>
+                    <button class="button button_full">UI/UX design</button>
+                    <button class="button button_full">Mockups</button>
+                </div>
+                <div class="row filter">
+                    <div class="col-xl-4"><img src="images/item1.png" alt=""></div>
+                    <div class="col-xl-4"><img src="images/item2.png" alt=""></div>
+                    <div class="col-xl-4"><img src="images/item3.png" alt=""></div>
+                    <div class="col-xl-4"><img src="images/item4.png" alt=""></div>
+                    <div class="col-xl-4"><img src="images/item5.png" alt=""></div>
+                    <div class="col-xl-4"><img src="images/item6.png" alt=""></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <button class="button button_full">View all</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- секция pricing -->
+    <section class="pricing">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <h2 class="main__title">Pricing Plan</h2>
+                    <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-xl-4">
+                    <div class="price">
+                        <div class="price__header">
+                            <h3>Free Trail</h3>
+                            <span>
+                                <sup>&#36;</sup>00<sub>per month</sub>
+                            </span>
+                        </div>
+                        <div class="price__body">
+                            <ul>
+                                <li>30 Free Trail</li>
+                                <li>5 Free Projects</li>
+                                <li>PHP 5 Enabled</li>
+                                <li>24/7 Suports</li>
+                            </ul>
+                        </div>
+                        <div class="price__footer">
+                            <button class="button button_full">Read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="price">
+                        <div class="price__header">
+                            <h3>Basic</h3>
+                            <span>
+                                <sup>&#36;</sup>50<sub>per month</sub>
+                            </span>
+                        </div>
+                        <div class="price__body">
+                            <ul>
+                                <li>30 Free Trail</li>
+                                <li>5 Free Projects</li>
+                                <li>PHP 5 Enabled</li>
+                                <li>24/7 Suports</li>
+                            </ul>
+                        </div>
+                        <div class="price__footer">
+                            <button class="button button_full">Read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="price">
+                        <div class="price__header">
+                            <h3>Ultimates</h3>
+                            <span>
+                                <sup>&#36;</sup>99<sub>per month</sub>
+                            </span>
+                        </div>
+                        <div class="price__body">
+                            <ul>
+                                <li>30 Free Trail</li>
+                                <li>5 Free Projects</li>
+                                <li>PHP 5 Enabled</li>
+                                <li>24/7 Suports</li>
+                            </ul>
+                        </div>
+                        <div class="price__footer">
+                            <button class="button button_full">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Team  -->
+    <section class="team">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <h2 class="main__title">Our Team Member</h2>
+                    <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+            </div>
+            <div class="row multiple-items justify-content-center">
+                <div class="col-xl-4">
+                    <img src="images/photo1.png" alt="">
+                    <h4>John Doe</h4>
+                    <p>General Manager</p>
+                    <div class="icons">
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-telegram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <img src="images/photo1.png" alt="">
+                    <h4>John Doe</h4>
+                    <p>General Manager</p>
+                    <div class="icons">
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-telegram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <img src="images/photo1.png" alt="">
+                    <h4>John Doe</h4>
+                    <p>General Manager</p>
+                    <div class="icons">
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-telegram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <img src="images/photo1.png" alt="">
+                    <h4>John Doe</h4>
+                    <p>General Manager</p>
+                    <div class="icons">
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-telegram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <img src="images/photo2.png" alt="">
+                    <h4>Alexa Biru</h4>
+                    <p>Office Director</p>
+                    <div class="icons">
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-telegram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <img src="images/photo3.png" alt="">
+                    <h4>Ronobir sing</h4>
+                    <p>Admin</p>
+                    <div class="icons">
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-telegram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- подключение js для bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+    crossorigin="anonymous"></script>
 
-  <!-- Our Team  -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+    crossorigin="anonymous"></script>
 
-  <section class="team">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-8">
-          <h2 class="main__title">Our Team Member</h2>
-          <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        </div>
-      </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+    crossorigin="anonymous"></script>
 
-         <div class="row justify-content-around">
-          <div class="col-xl-4">
-            <img src="images/photo1.png" alt="">
-            <h4>John Doe</h4>
-            <p>General Manager</p>
-            <div class="icons">
-              <a href="">
-                <span class="fa-stack fa-2x">
-                  <i class="fas fa-square fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-              <a href="">
-                <span class="fa-stack fa-2x">
-                  <i class="fas fa-square fa-stack-2x"></i>
-                  <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-          <a href="">
-            <span class="fa-stack fa-2x">
-            <i class="fas fa-square fa-stack-2x"></i>
-            <i class="fab fa-telegram fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-          <a href="">
-            <span class="fa-stack fa-2x">
-            <i class="fas fa-square fa-stack-2x"></i>
-            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-4">
-        <img src="images/photo2.png" alt="">
-        <h4>Alexa Biru</h4>
-        <p>Office Director</p>
-        <div class="icons">
-          <a href="">
-            <span class="fa-stack fa-2x">
-            <i class="fas fa-square fa-stack-2x"></i>
-            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-          <a href="">
-            <span class="fa-stack fa-2x">
-            <i class="fas fa-square fa-stack-2x"></i>
-            <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-          <a href="">
-            <span class="fa-stack fa-2x">
-            <i class="fas fa-square fa-stack-2x"></i>
-            <i class="fab fa-telegram fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-          <a href="">
-            <span class="fa-stack fa-2x">
-            <i class="fas fa-square fa-stack-2x"></i>
-            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-        </div>
-      </div>
-        <div class="col-xl-4">
-        <img src="images/photo3.png" alt="">
-        <h4>Ronobir sing</h4>
-        <p>Admin</p>
-        <div class="icons">
-          <a href="">
-            <span class="fa-stack fa-2x">
-            <i class="fas fa-square fa-stack-2x"></i>
-            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-          <a href="">
-            <span class="fa-stack fa-2x">
-            <i class="fas fa-square fa-stack-2x"></i>
-            <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-          <a href="">
-            <span class="fa-stack fa-2x">
-            <i class="fas fa-square fa-stack-2x"></i>
-            <i class="fab fa-telegram fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-          <a href="">
-            <span class="fa-stack fa-2x">
-            <i class="fas fa-square fa-stack-2x"></i>
-            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  <!-- подключение js для bootstrap-->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
-</html>
 
-&copy;  &#36;
+</html>
