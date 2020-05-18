@@ -31,18 +31,19 @@ li {
 }
 
 .menu__item a:hover {
-    color: #15bdac;
     transition: 0.3s;
+    text-decoration: underline;
 }
 
 .header {
-    background-image: url(../images/bak1.png);
+    background-image: url(../images/bak.png);
     background-size: cover;
+    background-repeat: no-repeat;
     /*масштаб с сохранением пропорций*/
     background-position: center;
     padding: 180px 0;
     text-align: center;
-    color: #000;
+    color: #fff;
 }
 
 .header__title {
@@ -65,13 +66,12 @@ li {
 }
 
 .button_full {
-    background: #1c7067;
-    border: 1.3px solid #1c7067;
+    background: #7F7B82;
+    border: 1.3px solid #7F7B82;
 }
 
 .button_full:hover {
-    background-color: #B2A893;
-    border: 1.3px solid #B2A893;
+    border: 1.3px solid #7F7B82;
     color: #000;
 }
 
@@ -106,7 +106,7 @@ li {
     padding-top: 50px;
     padding-bottom: 60px;
     text-align: center;
-    background-color: #D0C49E;
+    background-color: #7F7B82;
 }
 
 .button_full-white {
@@ -118,31 +118,31 @@ li {
 
 .our_card {
     margin-bottom: 35px;
-    background: #EDECDD;
+    background: #f0f0f0; 
     padding-top: 50px;
     padding-bottom: 40px;
     padding-left: 20px;
     padding-right: 20px;
-    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1)
+    box-shadow: 10px 10px 24px -15px rgba(252,252,252,1);
 }
 
 .our_card:hover {
-    color: #fff;
-    background: #1c7067;
+    color: #000;
     transition: 0.4s;
     cursor: pointer;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
 }
-
+/*
 .our_card:hover .button_full-white {
-    border: 1.3px solid #fff;
+    border: 1.3px solid #000;
     color: #fff;
-}
+}*/
 
 .our_card:hover .button_full-white:hover {
-    background: #fff;
-    transition: 0.4s;
-    color: #000;
-    border: 1.3px solid #fff;
+    background: #515052;
+    transition: 0.2s;
+    color: #fff;
+    border: 1.3px solid #515052;
     box-shadow: 10px 10px 45px -10px rgba(255, 255, 255, 0.71);
 }
 
@@ -158,7 +158,7 @@ li {
 .portfolio button:hover {
     background: transparent;
     color: #000;
-    border: 1.3px solid #1c7067;
+    border: 1.3px solid #7F7B82;
 }
 
 .portfolio img {
@@ -239,18 +239,19 @@ li {
     cursor: pointer;
 }
 
-.price:hover .button {
+/*.price:hover .button {
     background-color: transparent;
-    border: 1.3px solid #1c7067;
-    color: #1c7067;
-    transition: 0.2s;
-}
+    border: 1.3px solid #7F7B82;
+    color: #000;
+    transition: 0.3s;
+}*/
 
 .price:hover .button:hover {
-    background-color: #1c7067;
-    border: 1.3px solid #1c7067;
-    color: #fff;
-    transition: 0.4s;
+	background-color: transparent;
+    /*background-color: #7F7B82;*/
+    border: 1.3px solid #30343F;
+    color: #30343F;
+    transition: 0.3s;
 }
 
 /* Our Team */
