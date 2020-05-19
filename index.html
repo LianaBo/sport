@@ -20,21 +20,22 @@
     <header class="header-menu">
         <div class="container">
             <div class="row">
-                <div class="col-xl-2">
+                <div class="col-xl-2 logo-bar">
                     <a href="#">
                         <img src="images/logo.png" width="50" class="logo" alt="logo">
                     </a>
+                    <button class="menu-icon"><i class="fas fa-align-justify fa-2x"></i></button>
                 </div>
                 <div class="col-xl-8 ml-auto align-self-center">
                     <!-- ml-auto меню смешается влево // align-self-center выравнивание текста по центру -->
                     <nav>
                         <ul class="menu d-flex justify-content-end">
-                            <li class="menu__item"><a href="#">Home</a></li>
-                            <li class="menu__item"><a href="#">About</a></li>
-                            <li class="menu__item"><a href="#">Servicing </a></li>
-                            <li class="menu__item"><a href="#">Portfolio</a></li>
-                            <li class="menu__item"><a href="#">Team</a></li>
-                            <li class="menu__item"><a href="#">Contact us</a></li>
+                            <li class="menu__item"><a href="#/">Home</a></li>
+                            <li class="menu__item"><a href="#about">About</a></li>
+                            <li class="menu__item"><a href="#services">Servicing</a></li>
+                            <li class="menu__item"><a href="#portfolio">Portfolio</a></li>
+                            <li class="menu__item"><a href="#team">Team</a></li>
+                            <li class="menu__item"><a href="#contact">Contact us</a></li>
                             <li class="menu__item"><i class="fas fa-search"></i></li>
                         </ul>
                     </nav>
@@ -55,7 +56,7 @@
         </div>
     </header>
     <!-- секция about -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8">
@@ -84,7 +85,7 @@
         </div>
     </section>
     <!-- секция services -->
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8">
@@ -146,7 +147,7 @@
         </div>
     </section>
     <!-- секция portfolio -->
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8">
@@ -174,7 +175,7 @@
         </div>
     </section>
     <!-- секция pricing -->
-    <section class="pricing">
+    <section class="pricing" id="pricing">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8">
@@ -250,7 +251,7 @@
         </div>
     </section>
     <!-- Our Team  -->
-    <section class="team">
+    <section class="team" id="team">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8">
@@ -451,7 +452,7 @@
 
     <!-- Contact Us -->
 
-   <footer class="footer">
+   <footer class="footer" id="contact">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-8">
@@ -477,7 +478,7 @@
         <div class="row justify-content-center form">
           <div class="col-xl-5"><input type="text" placeholder="Your NAME"></div>
           <div class="col-xl-5"><input type="email" placeholder="Your Email"></div>
-          <div class="col-xl-10"><textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Write Massage"></textarea></div>
+          <div class="col-xl-10"><textarea name="text" id="textarea" cols="30" rows="10" placeholder="Write Massage"></textarea></div>
           <div class="col-xl-2 offset-xl-7"><button>Send</button></div>
         </div>
     </div>
