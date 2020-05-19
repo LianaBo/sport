@@ -282,6 +282,9 @@ li {
     cursor: pointer;
     margin: 0 auto;
     max-width: 340px;
+    border-radius: 10px;
+   
+
 }
 
 .icons {
@@ -294,11 +297,11 @@ li {
 }
 
 .icons i:nth-child(2) {
-    color: #00897b;
+    color: #5E6572;
 }
 
 .icons a:hover i:nth-child(1) {
-    color: #00897b;
+    color: #5E6572;
     transition: 0.3s;
 }
 
@@ -314,7 +317,7 @@ li {
 }
 
 .dots-style button {
-    background-color: #00897b;
+    background-color: #5E6572;
     border: none;
     border-radius: 50%;
     font-size: 0;
