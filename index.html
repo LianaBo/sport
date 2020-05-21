@@ -16,6 +16,7 @@
     <script src="https://kit.fontawesome.com/77a09c2cb8.js" crossorigin="anonymous"></script>
 </head>
 <!-- подключение иконок -->
+
 <body>
     <header class="header-menu">
         <div class="container">
@@ -29,15 +30,22 @@
                 <div class="col-xl-8 ml-auto align-self-center">
                     <!-- ml-auto меню смешается влево // align-self-center выравнивание текста по центру -->
                     <nav>
-                        <ul class="menu d-flex justify-content-end">
-                            <li class="menu__item"><a href="#/">Home</a></li>
-                            <li class="menu__item"><a href="#about">About</a></li>
-                            <li class="menu__item"><a href="#services">Servicing</a></li>
-                            <li class="menu__item"><a href="#portfolio">Portfolio</a></li>
-                            <li class="menu__item"><a href="#team">Team</a></li>
-                            <li class="menu__item"><a href="#contact">Contact us</a></li>
-                            <li class="menu__item"><i class="fas fa-search"></i></li>
-                        </ul>
+                        <div class="menu-wrapper d-flex justify-content-end">
+                            <ul class="menu d-flex">
+                                <li class="menu__item"><a href="#/">Home</a></li>
+                                <li class="menu__item"><a href="#about">About</a></li>
+                                <li class="menu__item"><a href="#services">Servicing</a></li>
+                                <li class="menu__item"><a href="#portfolio">Portfolio</a></li>
+                                <li class="menu__item"><a href="#team">Team</a></li>
+                                <li class="menu__item"><a href="#contact">Contact us</a></li>
+                            </ul>
+                            <div class="search-box d-flex">
+                                <form action="">
+                                    <imput type="text" placeholder="#"></imput>
+                                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </form>
+                            </div>
+                        </div>
                     </nav>
                 </div>
             </div>
@@ -66,17 +74,17 @@
             </div>
             <div class="row justify-content-around text-center">
                 <!-- выравнивание с одинаковыми отступами -->
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-6">
                     <i class="fab fa-battle-net fa-3x"></i>
                     <h3 class="main_h3">Awesome Icons</h3>
                     <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-6">
                     <i class="fas fa-book-open fa-3x"></i>
                     <h3 class="main_h3">One Page</h3>
                     <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-6">
                     <i class="fas fa-brain fa-3x"></i>
                     <h3 class="main_h3">Fully Responsive</h3>
                     <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
@@ -88,14 +96,14 @@
     <section class="services" id="services">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-8">
+                <div class="col-xl-8 ">
                     <h2 class="main__title">Our Services</h2>
                     <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
                 </div>
             </div>
             <div class="row justify-content-around text-center">
                 <!-- выравнивание с одинаковыми отступами -->
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="our_card">
                         <i class="fas fa-mobile-alt fa-3x"></i>
                         <h3 class="main_h3">Research</h3>
@@ -103,7 +111,7 @@
                         <button class="button button_full-white">Read more</button>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="our_card">
                         <i class="fas fa-portrait fa-3x"></i>
                         <h3 class="main_h3">Portfolio</h3>
@@ -111,7 +119,7 @@
                         <button class="button button_full-white">Read more</button>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="our_card">
                         <i class="fas fa-headset fa-3x"></i>
                         <h3 class="main_h3">Support</h3>
@@ -119,7 +127,7 @@
                         <button class="button button_full-white">Read more</button>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="our_card">
                         <i class="far fa-file fa-3x"></i>
                         <h3 class="main_h3">Documentation</h3>
@@ -127,7 +135,7 @@
                         <button class="button button_full-white">Read more</button>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="our_card">
                         <i class="fab fa-dev fa-3x"></i>
                         <h3 class="main_h3">Development</h3>
@@ -135,7 +143,7 @@
                         <button class="button button_full-white">Read more</button>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="our_card">
                         <i class="fas fa-palette fa-3x"></i>
                         <h3 class="main_h3">Design</h3>
@@ -159,12 +167,12 @@
                     <button class="button button_full">Mockups</button>
                 </div>
                 <div class="row filter">
-                    <div class="col-xl-4"><img src="images/item1.png" alt=""></div>
-                    <div class="col-xl-4"><img src="images/item2.png" alt=""></div>
-                    <div class="col-xl-4"><img src="images/item3.png" alt=""></div>
-                    <div class="col-xl-4"><img src="images/item4.png" alt=""></div>
-                    <div class="col-xl-4"><img src="images/item5.png" alt=""></div>
-                    <div class="col-xl-4"><img src="images/item6.png" alt=""></div>
+                    <div class="col-xl-4 col-md-6"><img src="images/item1.png" alt=""></div>
+                    <div class="col-xl-4 col-md-6"><img src="images/item2.png" alt=""></div>
+                    <div class="col-xl-4 col-md-6"><img src="images/item3.png" alt=""></div>
+                    <div class="col-xl-4 col-md-6"><img src="images/item4.png" alt=""></div>
+                    <div class="col-xl-4 col-md-6"><img src="images/item5.png" alt=""></div>
+                    <div class="col-xl-4 col-md-6"><img src="images/item6.png" alt=""></div>
                 </div>
             </div>
             <div class="row">
@@ -184,7 +192,7 @@
                 </div>
             </div>
             <div class="row justify-content-around">
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="price">
                         <div class="price__header">
                             <h3>Free Trail</h3>
@@ -205,7 +213,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="price">
                         <div class="price__header">
                             <h3>Basic</h3>
@@ -226,7 +234,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="price">
                         <div class="price__header">
                             <h3>Ultimates</h3>
@@ -449,44 +457,41 @@
             </div>
         </div>
     </section>
-
     <!-- Contact Us -->
-
-   <footer class="footer" id="contact">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-8">
-                <h2 class="main__title">Contact Us</h2>
-                <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <h2 class="main__title">Contact Us</h2>
+                    <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-xl-3 col-md-4">
+                    <div class="circle"><i class="fas fa-map-marker-alt fa-3x"></i></div>
+                    <a href="#" target="_blank">Nobinagar savar,<br>Dhaka Bangladesh</a>
+                </div>
+                <div class="col-xl-3 col-md-4">
+                    <div class="circle"><i class="fas fa-phone-alt fa-3x"></i></div>
+                    <a href="tel:+88017433399" target="_blank">+8(801)743-33-99</a><br>
+                    <a href="tel:+88017433366" target="_blank">+8(801)743-33-66</a>
+                </div>
+                <div class="col-xl-3 col-md-4">
+                    <div class="circle"> <i class="fas fa-envelope fa-3x"></i></div>
+                    <a href="mailto:example@mail.ru" target="_blank">example@mail.ru</a>
+                </div>
+            </div>
+            <div class="row justify-content-center form">
+                <div class="col-xl-5"><input type="text" placeholder="Your NAME"></div>
+                <div class="col-xl-5"><input type="email" placeholder="Your Email"></div>
+                <div class="col-xl-10"><textarea name="text" id="textarea" cols="30" rows="10" placeholder="Write Massage"></textarea></div>
+                <div class="col-xl-2 offset-xl-7"><button>Send</button></div>
             </div>
         </div>
-        <div class="row justify-content-around">
-            <div class="col-xl-3">
-                <div class="circle"><i class="fas fa-map-marker-alt fa-3x"></i></div>
-                <a href="#" target="_blank">Nobinagar savar, Dhaka Bangladesh</a>
-            </div>
-            <div class="col-xl-3">
-                <div class="circle"><i class="fas fa-phone-alt fa-3x"></i></div>
-                <a href="tel:+88017433399" target="_blank">+8(801)743-33-99</a><br>
-                <a href="tel:+88017433366" target="_blank">+8(801)743-33-66</a>
-            </div>
-            <div class="col-xl-3">
-                <div class="circle"> <i class="fas fa-envelope fa-3x"></i></div>
-                <a href="mailto:example@mail.ru" target="_blank">example@mail.ru</a>
-            </div>
-        </div>
-        <div class="row justify-content-center form">
-          <div class="col-xl-5"><input type="text" placeholder="Your NAME"></div>
-          <div class="col-xl-5"><input type="email" placeholder="Your Email"></div>
-          <div class="col-xl-10"><textarea name="text" id="textarea" cols="30" rows="10" placeholder="Write Massage"></textarea></div>
-          <div class="col-xl-2 offset-xl-7"><button>Send</button></div>
-        </div>
-    </div>
     </footer>
     <footer class="footer-bottom">
-      <p>All rights Reserved &copy; 2020</p>
+        <p>All rights Reserved &copy; 2020</p>
     </footer>
-
     <!-- подключение js для bootstrap-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -495,4 +500,5 @@
     <script src="slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
